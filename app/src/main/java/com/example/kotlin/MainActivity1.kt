@@ -1,14 +1,16 @@
 package com.example.kotlin
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.AlarmClock
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity1 : AppCompatActivity() {
     lateinit var etName:EditText
@@ -19,34 +21,31 @@ class MainActivity1 : AppCompatActivity() {
 
         Log.i(TAG,  "im in oncreate")
     }
-    override fun onStart() {
-        super.onStart()
-        Log.i(TAG,"starting-ui visible")
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+         super.onCreateOptionsMenu(menu)
+        menuInflater.inflate(R.menu.main_menu,menu)
+        return true
+    }
+    override fun onOptionsItemSelected(mItem: MenuItem): Boolean {
+        super.onOptionsItemSelected(mItem)
+        when (mItem.itemId) {
+            R.id.mi_settings -> {
+                Toast.makeText(this, "opening settings", Toast.LENGTH_SHORT).show()
+            }
+            R.id.milogout -> {
+                Toast.makeText(this, "logging out", Toast.LENGTH_SHORT).show()
+
+
+            }
+
+
+        }
+        return true
     }
 
 
-    override fun onResume() {
-        super.onResume()
-        Log.i(TAG,"resuming-restore state")
 
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.i(TAG,"pausing-save state")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.i(TAG,"stopping")
-
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.i(TAG,"destroying")
-    }
 
     fun clickHandler(view: View) {
         when (view.id) {
@@ -64,7 +63,7 @@ class MainActivity1 : AppCompatActivity() {
     }
 
     private fun startDialer() {
-        var a = 10;
+        var a = 10
         var b = a * 20;
         add(10,20)
 
