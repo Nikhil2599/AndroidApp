@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/niks0001/AndroidStudioProjects/Kotlin/app/src/main/res/drawable/gradient_box.xml" value="0.1785" />
+        <entry key="..\:/Users/niks0001/AndroidStudioProjects/Kotlin/app/src/main/res/drawable/ic_baseline_school_24.xml" value="0.1785" />
+        <entry key="..\:/Users/niks0001/AndroidStudioProjects/Kotlin/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/niks0001/AndroidStudioProjects/Kotlin/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/niks0001/AndroidStudioProjects/Kotlin/app/src/main/res/layout/activity_main1.xml" value="0.1" />
+        <entry key="..\:/Users/niks0001/AndroidStudioProjects/Kotlin/app/src/main/res/layout/activity_recycler.xml" value="0.1796875" />
+        <entry key="..\:/Users/niks0001/AndroidStudioProjects/Kotlin/app/src/main/res/layout/row_rview.xml" value="0.1" />
+        <entry key="..\:/Users/niks0001/AndroidStudioProjects/Kotlin/app/src/main/res/menu/main_context.xml" value="0.1" />
         <entry key="..\:/Users/niks0001/AndroidStudioProjects/Kotlin/app/src/main/res/menu/main_menu.xml" value="0.1" />
       </map>
     </option>

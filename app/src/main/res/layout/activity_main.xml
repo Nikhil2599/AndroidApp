@@ -17,49 +17,8 @@
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <EditText
-        android:id="@+id/etContact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="47dp"
-        android:ems="10"
-        android:hint="enter contact"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etName" />
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:onClick="clickHandler"
-        android:text="login"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnAlarm"
-        app:layout_constraintStart_toEndOf="@+id/btnAlarm" />
 
-    <Button
-        android:id="@+id/btnDial"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:onClick="clickHandler"
-        android:text="dial"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etContact" />
-    app:layout_constraintBaseline_toBaselineOf="@+id/btnAlarm"
-    app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnAlarm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="3dp"
-        android:onClick="clickHandler"
-        android:text="alarm"
-        app:layout_constraintEnd_toEndOf="@+id/etContact"
-        app:layout_constraintTop_toBottomOf="@+id/etContact" />
 
     <TextView
         android:id="@+id/tvMain"
@@ -68,16 +27,9 @@
         android:layout_marginTop="81dp"
         android:layout_marginEnd="51dp"
         android:text="TextView"
+        style="@style/fontstyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/etContact"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

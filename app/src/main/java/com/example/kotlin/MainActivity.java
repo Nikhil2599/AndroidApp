@@ -16,11 +16,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
+                int a=10;
                 setContentView(R.layout.activity_main);
                 etContact = findViewById(R.id.etName);
                 tvHome = findViewById(R.id.tvMain);
-        etContact = findViewById(R.id.etContact);
-        tvHome = findViewById(R.id.tvHome);
+       // etContact = findViewById(R.id.etContact);
+       // tvHome = findViewById(R.id.tvHome);
          /* String name = getIntent().getExtras().getString("nkey");
        tvHome.setText("hello "+name);*/
         }
