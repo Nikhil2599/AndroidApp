@@ -17,6 +17,7 @@
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="wrap_content"
@@ -45,8 +46,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
         android:layout_marginTop="27dp"
-        android:text="dial"
         android:onClick="clickHandler"
+        android:text="dial"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
@@ -61,6 +62,17 @@
         android:text="alarm"
         app:layout_constraintEnd_toStartOf="@+id/btnLogin"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="36dp"
+        android:text="Download"
+        android:onClick="clickHandler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDial" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

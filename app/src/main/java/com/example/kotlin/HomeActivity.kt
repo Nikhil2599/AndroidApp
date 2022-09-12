@@ -1,5 +1,6 @@
 package com.example.kotlin
 
+import DownloadTask
 import android.content.ContentValues.TAG
 import android.content.Intent
 import android.net.Uri
@@ -19,34 +20,7 @@ class MainActivity1 : AppCompatActivity() {
 
         Log.i(TAG,  "im in oncreate")
     }
-    override fun onStart() {
-        super.onStart()
-        Log.i(TAG,"starting-ui visible")
 
-    }
-
-
-    override fun onResume() {
-        super.onResume()
-        Log.i(TAG,"resuming-restore state")
-
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.i(TAG,"pausing-save state")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.i(TAG,"stopping")
-
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.i(TAG,"destroying")
-    }
 
     fun clickHandler(view: View) {
         when (view.id) {
@@ -59,8 +33,16 @@ class MainActivity1 : AppCompatActivity() {
             R.id.btnAlarm -> {
                 createAlarm("sync", 3, 20)
             }
+            R.id.btnDownload -> {
+                downloadimage()
+            }
         }
 
+    }
+
+    private fun downloadimage() {
+        var downloadTask = DownloadTask()
+        downloadTask.execute("http://imagedownloadurl.com")
     }
 
     private fun startDialer() {
